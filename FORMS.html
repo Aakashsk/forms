@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>HTML FORM </title>
+	<link rel="shortcut icon" size=135*134 type="image/x-icon" href="logo1.jpg"> 
+</head>
+<style>
+a:link {
+	color: rgba(0,0,0);
+	background-color: transparent;
+	text-decoration:solid;
+  }
+  a:visited {
+	color:blue;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  a:active {
+	color: yellow;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  </style>
+<body style=" font-family:'Times New Roman', Times, serif; border: 3px solid rgb(5, 5, 5);">
+	<h1 style="font-family:'Times New Roman', Times, serif ;">HTML FORMS</h1>
+	
+	<h3 > <i>REGISTRATION FORM</i> </center> </h1>
+<form id="myform" action="">
+	<table style="border: 3px solid black; " border="0"  cellspacing="5" cellpadding="5" >
+<tr>
+<td>NAME </td> 
+<td><input type="text" id="name" placeholder="enter ur nmae" maxlength="30" /></td>
+</tr>
+ <tr>
+<td>REGISTRATION NO </td>
+<td><input type="t2" id="regno" maxlength="30" /></td>
+</tr>
+<tr>
+<td>DOB</td>
+<td> <input type="date" id="dob"/></td>
+</tr>
+<tr> <td> GENDER </td>
+<td><input type="radio" id="gender" name="r1" />  
+		MALE <input type="radio" name="r2" />  
+		FEMALE <input type="radio" name="r3"/></td></tr>
+<tr>
+<td>EMAIL ID </td>
+<td><input type="email" id="email"></td>
+</tr> 
+
+<tr > <td colspan="2"> <center> <input type="submit" onclick="getInputValue()"  value="submit" /> <input type="reset" value="reset"/></center></td></tr>
+</table>
+</form>
+<script type="text/javascript">
+function getInputValue(){
+	// Selecting the input element and get its value 
+	var inputVal = document.getElementById("name").value;
+	var inputVal2 = document.getElementById("regno").value;
+	var inputVal5 = document.getElementById("gender").value;
+	var inputVal3 = document.getElementById("dob").value;
+	var inputVal4 = document.getElementById("email").value;
+	
+	// Displaying the value
+	console.log(inputVal);
+	console.log(inputVal2);
+	console.log(inputVal3);
+	console.log(inputVal4);
+	console.log(inputVal5);
+		
+
+
+}
+</script>
+</body>
+</html>
